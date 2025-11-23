@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.insta-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.insta-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #e0e0e0;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 0, 200, 0.2);
+  animation: neonGlow 2.5s infinite alternate;
+}
+.insta-icon {
+  width: 24px;
+  fill: #d600d6;
+}
+.insta-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 200, 0.6), 0 0 35px rgba(30, 0, 255, 0.4);
+}
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 200, 0.3), 0 0 20px rgba(0, 200, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 0, 200, 0.7), 0 0 45px rgba(0, 200, 255, 0.5);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  /* Ubah background solid menjadi gambar dengan efek */
+  background: url("Foto Angkatan.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0; /* Agar z-index elemen sebelum / sesudah bisa diatur */
+}
+
+header {
+  background: #031079;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header .logo-fkip {
+  position: absolute;
+  top: 30px;
+  right: 127px;
+  width: 70px;
+  height: auto;
+}
+
+header .logo-formatif {
+  position: absolute;
+  top: 15px;
+  right: 190px;
+  width: 100px;
+  height: auto;
+}
+
+header .logo-neotic {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 100px;
+  height: auto;
+}
+
+header .logo-unila {
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  width: 170px;
+  height: auto;
+}
+
+header .foto-angkatan {
+  width: 600px;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(0, 200, 255, 0.3),
+    0 0 50px rgba(255, 255, 255, 0.2);
+  animation: fotoGlow 3s infinite alternate ease-in-out;
+}
+@keyframes fotoGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3),
+      0 0 25px rgba(0, 200, 255, 0.25), 0 0 35px rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
+      0 0 45px rgba(0, 200, 255, 0.45), 0 0 65px rgba(255, 255, 255, 0.3);
+  }
+}
+nav {
+  background: #024a91;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#profil {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(65, 63, 63, 0.2);
+}
+.visi-misi-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.Universitas-Fakultas-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.card-visi {
+  background: #222;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card-visi h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.card-misi {
+  background: #b89248;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card-misi h2 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.card-visi p,
+.card-misi p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.anggota-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.anggota {
+  background: #e8edf7;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.anggota-link:hover {
+  background-color: #e0e0e0; /* Background lebih gelap saat hover */
+  color: #007bff; /* Warna teks biru saat hover untuk menunjukkan link */
+}
+
+/* Untuk anggota tanpa link (tetap sebagai div) */
+.anggota {
+  background-color: transparent; /* Tidak ada background untuk teks biasa */
+  padding: 5px 10px; /* Padding sama untuk konsistensi */
+  margin: 2px 0;
+}
+
+#anggota h2 {
+  background-color: white;
+  color: #000000; /* Warna teks, agar kontras */
+  display: inline-block; /* Agar ukuran background sesuai teks */
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+}
+.anggota-link {
+  color: inherit; /* Warna teks sama seperti teks biasa */
+  text-decoration: none; /* Hilangkan garis bawah default link */
+  background-color: #f0f0f0; /* Background abu-abu muda pada teks */
+  padding: 5px 10px; /* Padding untuk membuat background seperti box kecil */
+  border-radius: 5px; /* Sudut melengkung untuk efek box */
+  display: inline-block; /* Agar background mengikuti teks */
+  margin: 2px 0; /* Jarak antar anggota */
+  transition: background-color 0.3s; /* Efek transisi halus saat hover */
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366;
+  color: white;
+  margin-top: 30px;
+  font-weight: 400;
+}
